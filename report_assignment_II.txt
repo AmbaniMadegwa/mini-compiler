@@ -30,3 +30,7 @@ That is the initial description of our language.
 
 Grammar and BNF
 ---------------
+program -> decList                  //declaration List
+declList -> decList decl | decl     //declaration
+decl -> varDecl | funDecl           //variable Declaration | function Declaration
+varDecl -> typeSpec varDecl
